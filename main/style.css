@@ -1,0 +1,303 @@
+/* style.css */
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  color: white;
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 10px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 5px #f8d100;
+}
+
+.navbar-container {
+  flex: 1;
+}
+
+.menu {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #f8d100;
+}
+
+.Warp_Right_Site_Nav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-icon {
+  height: 24px;
+}
+
+.btn_getlauncher {
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: #f8d100;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.btn_getlauncher > a {
+  color: #000;
+  font-weight: bold;
+}
+
+.hero {
+  height: 100vh;
+  background: url('https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/gta6-trailer-thumb.1df4c63e.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  position: relative;
+}
+
+.overlay {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.Warp_img_Banner {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Warp_img_Banner img {
+  max-width: 1000%;
+  border-radius: 10px;
+}
+
+.Warp_Content_Banner {
+  width: 30%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.Warp_Content_Banner h2 {
+  font-size: 2rem;
+  color: #f8d100;
+}
+
+.Warp_Content_Banner h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.btn {
+  background-color: #f8d100;
+  color: #000;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #e1be00;
+}
+
+.games {
+  background: #111;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 300px;
+  scroll-snap-align: center;
+  background: #222;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.slide img {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.slide p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #000;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: auto;
+  color: #999;
+}
+
+.footer-logo {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: #999;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #f8d100;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .Warp_img_Banner {
+    display: none;
+  }
+
+  .Warp_Content_Banner {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .game-card {
+    width: 100%;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .Warp_Right_Site_Nav {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .btn_getlauncher {
+    padding: 8px 12px;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .nav-icon {
+    height: 20px;
+  }
+}
+
+
+.container {
+  width: 100%;     
+  padding: 2vw;
+  font-size: 1.2rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.item {
+  flex: 1 1 300px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

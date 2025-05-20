@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rockstar Games Inspired</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <img src="image/HD-wallpaper-rockstar-games-logo-rockstargames-rokcstar-games.jpg" alt="Rockstar Logo" class="logo" />
+    </div>
+    <nav class="menu">
+      <a href="#">Games</a>
+      <a href="#">Newswire</a>
+      <a href="#">Videos</a>
+      <a href="#">Downloads</a>
+      <a href="#">Support</a>
+      <a href="#">Social Club</a>
+    </nav>
+    <div class="Warp_Right_Site_Nav">
+      <div class="btn_getlauncher">
+        <a href="#">Get Launcher</a>
+      </div>
+      <img src="image/search-icon-512x512-dxj09ddf.png" alt="User Icon" class="nav-icon" />
+      <img src="image/account_profile_user_avatar_icon_219236.webp" alt="Language Icon" class="nav-icon" />
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <div class="Warp_img_Banner">
+        <img src="image/GTA VI 1.jpg" alt="GTA VI Trailer" />
+      </div>
+      <div class="Warp_Content_Banner">
+        <h2>Grand Theft Auto VI</h2>
+        <h1>Trailer 1</h1>
+        <button class="btn" onclick="watchTrailer()">Watch Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Game Slider -->
+  <section class="games">
+    <h2 class="section-title">Featured Games</h2>
+    <div class="slider-container">
+      <button class="arrow left" onclick="scrollSlider(-1)">&#10094;</button>
+      <div class="slider" id="gameSlider">
+        <div class="slide">
+          <img src="image/Grand_Theft_Auto_V.png" alt="GTA V">
+          <p>Grand Theft Auto V</p>
+        </div>
+        <div class="slide">
+          <img src="image/icon0.png.avif" alt="Red Dead Redemption 2">
+          <p>Red Dead Redemption 2</p>
+        </div>
+        <div class="slide">
+          <img src="image/Max_Payne_3_Cover.jpg" alt="Max Payne 3">
+          <p>Max Payne 3</p>
+        </div>
+      </div>
+      <button class="arrow right" onclick="scrollSlider(1)">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <img src="image/icons8-rockstar-social-club-480.png" alt="Rockstar Logo" class="footer-logo" />
+      <p>&copy; 2025 Rockstar Games Inspired. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Subscribe</a>
+        <a href="#">Corporate Info</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
